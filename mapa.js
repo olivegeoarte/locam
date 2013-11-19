@@ -56,7 +56,7 @@ document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
 		var latlon2=saveLocal(lt,lt);
 
 		var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
-		+latlon+"&zoom=14&size=400x300&sensor=false";
+		+latlon+"&zoom=14&size=300x300&sensor=false";
 
 		document.getElementById("mapholder2").innerHTML="<img src='"+img_url+"'>";
 		}
