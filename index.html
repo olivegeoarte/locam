@@ -5,6 +5,9 @@
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script> 
         <script type="text/javascript" src="mapa.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    	<script type="text/javascript" charset="utf-8" src="camera.js"></script>
+        
 		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script> 
 	   	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> 
 		<script type="text/javascript">
@@ -70,6 +73,9 @@ document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
             teste mapa
             <button onclick="getLocation()">vai</button>
             <div id="mapholder"></div>
+            <button onclick="capturePhoto();">Capture Photo</button> <br>
+            <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+    		<img style="display:none;" id="largeImage" src="" />
             <a href="mostra" data-role="button">mostra</a>
             </div>
             <div data-role="footer">
